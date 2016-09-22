@@ -1,0 +1,11 @@
+{
+    "name": "poli/probando_travisci",
+    "require": {
+        "phpunit/phpunit": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ejemplo\\": "src"
+        }
+    }
+}
