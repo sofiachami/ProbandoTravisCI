@@ -5,6 +5,7 @@ namespace Ejemplo;
 class Triangulo {
 
   protected $base;
+  
   protected $altura;
 
   function __construct($base, $altura) {
