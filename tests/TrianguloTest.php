@@ -9,9 +9,8 @@ class TrianguloTest extends TestCase {
 
 
   public function testArea() {
-
-    $triangulo = new Triangulo(2, 3);
-    $this->assertEquals($triangulo->area(), 3);
+    $triangulo = new Triangulo(4, 3);
+    $this->assertEquals($triangulo->area(), 6);
 
   }
 
