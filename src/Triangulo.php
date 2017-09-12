@@ -10,6 +10,7 @@ class Triangulo {
 
   function __construct($base, $altura) {
     $this->base = $base;
+    
     $this->altura = $altura;
   }
 
