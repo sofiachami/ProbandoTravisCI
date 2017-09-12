@@ -4,6 +4,7 @@ namespace Ejemplo;
 
 class Triangulo {
 
+  
   protected $base;
   
   protected $altura;
