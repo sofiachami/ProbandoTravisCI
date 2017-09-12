@@ -1,8 +1,9 @@
 <? php
 
 namespace numeros;
-
-function Convert_dec_to_rom(int $numero){
+class NumeroRomano{
+     
+     function Convert_dec_to_rom($valor){
 	$n= "";
  	$parcialfinal="";
 	
