@@ -13,6 +13,7 @@ class TrianguloTest extends TestCase {
     
     $this->assertEquals($triangulo->area(), 6);
     $this->assertEquals($triangulo->area(), 6);
+    $this->assertEquals($triangulo->area(), 7);
 
   }
 
