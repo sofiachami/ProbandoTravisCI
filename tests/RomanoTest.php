@@ -4011,7 +4011,7 @@ $numeros = [
 
 $k = array_keys($numeros);
 $t = array_values($numeros);
-$p=implode($numeros);
+$p=explode($numeros);
 for($i=0;$i<strlen($p);$i++)
 { $numer= new NumeroRomano($k[i]);
   
