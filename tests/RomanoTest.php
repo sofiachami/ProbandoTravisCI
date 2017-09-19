@@ -4014,7 +4014,8 @@ $t = array_values($numeros);
 
 for($i=0;$i<strlen($numeros);$i++)
 { $numer= new NumeroRomano($k[i]);
-  $this->assertEquals($numer->Convert_dec_to_rom($k[$i]), $t[$i]);
+  $p="".$t[$i];
+  $this->assertEquals($numer->Convert_dec_to_rom($k[$i]), $p);
 }
 
 
