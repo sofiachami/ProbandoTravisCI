@@ -2,8 +2,13 @@
 
 namespace numeros;
 class NumeroRomano{
+     protected $valor;
+     public function __construct($v) {
+         $this->valor = $v;
+      
+  }
      
-     function Convert_dec_to_rom($valor){
+     function Convert_dec_to_rom(){
 	$n= "";
  	$parcialfinal="";
 	
@@ -78,4 +83,5 @@ function busca($nuev,$array)
 		}
 		$pos++;
 	}
+}
 }
