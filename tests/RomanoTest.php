@@ -1,13 +1,13 @@
-<? php
+<?php
 namespace numeros;
 
 use PHPUnit\Framework\TestCase;
 
 class RomanoTest extends TestCase {
-  public function TestConvert_dec_to_rom() {
+  public function testConvertir_dec_to_rom() {
  
 
-$numeros = (
+$numeros = [
 1  => 'I',
 2  => 'II',
 3  => 'III',
@@ -4007,12 +4007,12 @@ $numeros = (
 3997  => 'MMMCMXCVII',
 3998  => 'MMMCMXCVIII',
 3999  => 'MMMCMXCIX'
-);
+];
 
 $k = array_keys($numeros);
 $t = array_values($numeros);
 
-for($i=0,$i<strlen($numeros),$i++)
+for($i=0;$i<strlen($numeros);$i++)
 { $numer= new NumeroRomano($k[i]);
   $this->assertEquals($numer->Convert_dec_to_rom($k[$i]), $t[$i]);
 }
