@@ -4012,7 +4012,7 @@ $numeros = [
 $k = array_keys($numeros);
 $t = array_values($numeros);
 $p=explode($numeros);
-for($i=0;$i<strlen($p);$i++)
+for($i=0;$i<4000;$i++)
 { $numer= new NumeroRomano($k[i]);
   
   $this->assertEquals($numer->Convert_dec_to_rom($k[$i]), $p);
