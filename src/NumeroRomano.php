@@ -2,9 +2,9 @@
 use PHPUnit\Framework\TestCase;
 namespace numeros;
 class NumeroRomano{
-     protected $valor;
+     protected $numero;
      public function __construct($v) {
-         $this->valor = $v;
+         $this->numero = $v;
       
   }
      
