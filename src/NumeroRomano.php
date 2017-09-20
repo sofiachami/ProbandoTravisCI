@@ -8,7 +8,7 @@ class NumeroRomano{
       
   }
 	
-	public function busca($nuev,$array)
+     public function busca($nuev,$array)
 {
 	foreach($array as $contenido)
 	{	$pos=0;
