@@ -7,8 +7,20 @@ class NumeroRomano{
          $this->numero = $v;
       
   }
+	
+	public function busca($nuev,$array)
+{
+	foreach($array as $contenido)
+	{	$pos=0;
+		if($contenido==$nuev)
+		{
+			return $pos;
+		}
+		$pos++;
+	}
+}
      
-     function Convert_dec_to_rom(){
+     public function Convert_dec_to_rom(){
 	$n= "";
  	$parcialfinal="";
 	
@@ -73,15 +85,5 @@ class NumeroRomano{
 	return $n;
 }
  
-function busca($nuev,$array)
-{
-	foreach($array as $contenido)
-	{	$pos=0;
-		if($contenido==$nuev)
-		{
-			return $pos;
-		}
-		$pos++;
-	}
-}
+
 }
