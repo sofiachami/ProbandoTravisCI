@@ -16,15 +16,15 @@ class NumeroRomano{
 	$posiblesletras=array("M"=>1000,"D"=>500,"C"=>100,"L"=>50,"X"=>10,"V"=>5,"I"=>1);
 	$letrasromanas=array_keys($posiblesletras);
  
-	while($numero)
+	while($this->numero)
 	{
 		for($pos=0;$pos<=6;$pos++)
 		{
-			$resultado=$numero/$posiblesnumeros[$pos];
+			$resultado=$this->numero/$posiblesnumeros[$pos];
 			if($resultado>=1)
 			{
 				$n = $n . str_repeat($letrasromanas[$pos],floor($resultado)); #repito las letras tantas veces como sea el resto
-				$numero = $numero - (floor($resultado)*$posiblesnumeros[$pos]);
+				$this->numero = $this->numero - (floor($resultado)*$posiblesnumeros[$pos]);
 			}
 		}
 	}
